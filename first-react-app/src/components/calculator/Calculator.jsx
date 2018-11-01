@@ -9,6 +9,7 @@ import Button from "./Button";
 const Container = styled.div``;
 
 const evalFunc = function(string) {
+  // eslint-disable-next-line no-new-func
   return new Function("return (" + string + ")")();
 };
 
